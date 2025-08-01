@@ -220,6 +220,12 @@
   .header__menu-parentest {
     overflow-y: scroll !important;
   }
+  .header__menu-inner::webkit-scrollbar,
+  .header__menuitemabs::webkit-scrollbar,
+  .header__menucol::webkit-scrollbar,
+  .header__menu-parentest::webkit-scrollbar {
+    width: 0;
+  }
   .header__menu-parentest {
     display: block !important;
     right: 0 !important;

@@ -228,6 +228,9 @@
    .header__menucol,
    .header__menu-parentest {
       overflow-y: scroll !important;
+      &::webkit-scrollbar {
+         width: 0;
+      }
    }
    .header__menu-parentest {
       display: block !important;
