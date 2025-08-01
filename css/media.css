@@ -219,6 +219,7 @@
   .header__menucol,
   .header__menu-parentest {
     overflow-y: scroll !important;
+    overflow-x: hidden !important;
   }
   .header__menu-inner::webkit-scrollbar,
   .header__menuitemabs::webkit-scrollbar,
