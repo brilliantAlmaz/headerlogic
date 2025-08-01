@@ -239,6 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.innerWidth <= 980) {
          // "calc(100% - " + + + " - " + +document.querySelector('.__mobile .header').clientHeight + "px)"
          menuMob.style.height = "auto";
+
          menuMob.style.maxHeight = `calc(100vh - ${document.querySelector('.__mobile .upperheader__body').clientHeight}px - ${document.querySelector('.__mobile .header').clientHeight}px)`;
          menuMob.style.height = "0";
          document.querySelectorAll('.header__menuitemabs').forEach(i => {
@@ -248,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
          document.querySelectorAll('.header__menucol ').forEach(i => {
             i.style.height = `calc(100vh - ${document.querySelector('.__mobile .upperheader__body').clientHeight}px - ${document.querySelector('.__mobile .header').clientHeight}px - 40px)`;
          })
+         document.querySelector('.header__menuwrapper').style.height = `calc(100vh - ${document.querySelector('.__mobile .upperheader__body').clientHeight}px - ${document.querySelector('.__mobile .header').clientHeight}px - 40px)`;
       } else {
          // "calc(100% - " + + + " - " + +document.querySelector('.__mobile .header').clientHeight + "px)"
 
