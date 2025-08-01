@@ -105,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const hrefString = btn.href.split('/');
             const href = hrefString[hrefString.length - 1]
-            console.log('YEEEEEEEEEEEEEES');
-            console.log(href);
+            //console.log('YEEEEEEEEEEEEEES');
+            //console.log(href);
 
             btn.parentNode.parentNode.querySelectorAll('.header__menucol._pre').forEach(mci => {
                mci.classList.remove('active');
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
          let hrefString = mnlink.href.split('/');
          hrefString = hrefString[hrefString.length - 1];
          hrefString = hrefString.split('-');
-         console.log(hrefString);
+         //console.log(hrefString);
          const parentHref = mnlink.parentNode.parentNode.parentNode.getAttribute('id');
          if (window.innerWidth > 980) {
             document.querySelectorAll('.header__menucontent#' + hrefString[0] + " .header__menucol._second").forEach(t => {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
    document.querySelectorAll('.header__menucol._pre .header__menulink.__haschildren ').forEach(mnlink => {
-      console.log(mnlink);
+      //console.log(mnlink);
       mnlink.addEventListener('click', (e) => {
 
          e.preventDefault();
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
    })
    document.querySelectorAll('.__mobile .header__menucol .header__menulink.__haschildren ').forEach(mnlink => {
-      console.log(mnlink);
+      //console.log(mnlink);
       mnlink.addEventListener('click', (e) => {
 
          e.preventDefault();
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
       a.addEventListener('click', (e => {
          if (a.classList.contains('__haschildren') || a.classList.contains('__menuactivate') || a.classList.contains('header__menubtn')) {
             e.preventDefault();
-            console.log('i am not redirecting!');
+            //console.log('i am not redirecting!');
          } else {
             e.preventDefault();
             alert("На продакшене эта ссылка вела бы на url: " + a.href)
@@ -282,12 +282,12 @@ document.addEventListener('DOMContentLoaded', () => {
       })
    })
    function mobileMenuFunc(href) {
-      console.log(href);
+      //console.log(href);
       menuMobInner.classList.add('active')
 
       const hrefString = href.split('/');
       const id = hrefString[hrefString.length - 1];
-      console.log(id);
+      //console.log(id);
       menuContentsMob.forEach(mc => {
          if (mc.getAttribute('id') == id) {
             mc.classList.add('active');
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
    function fixedHeaderInit() {
-      console.log();
+      //console.log();
       if (window.innerWidth <= 980) {
          document.querySelector('main#content').style.paddingTop = document.querySelector('.__mobile').clientHeight + "px";
       } else {
@@ -343,8 +343,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
    const upperheaderHeight = document.querySelector('.upperheader').clientHeight
    const headerNav = document.querySelector('.header__nav').clientHeight
-   console.log(upperheaderHeight);
-   console.log(headerNav);
+   //console.log(upperheaderHeight);
+   //console.log(headerNav);
 
    let previousPosition = window.pageYOffset || document.documentElement.scrollTop;
 
